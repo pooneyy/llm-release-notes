@@ -1,0 +1,21 @@
+name: Publish Python Package
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@main
+        with:
+          python-version: 3.x
+          pip-install: build twine
+
+      - name: Build package
+        run: python -m build
+
+      - name: Publish to PyPI
+        run: twine upload --repository llm-release-notes dist/*
