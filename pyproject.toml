@@ -34,5 +34,5 @@ BugTracker = "https://github.com/pooneyy/llm-release-notes/issues"
 Documentation = "https://github.com/pooneyy/llm-release-notes/blob/main/README.md"
 
 [project.scripts]
-llm-release-notes = "generate_release_notes.generator:main"
-gen-changelog = "generate_release_notes.generator:main"
+llm-release-notes = "llm_release_notes.generator:main"
+gen-changelog = "llm_release_notes.generator:main"
