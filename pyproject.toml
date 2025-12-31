@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "llm-release-notes"
-version = "1.0.0"
+version = "1.0.1"
 description = "使用大语言模型根据 git 差异文件生成变更日志的工具"
 readme = "README.md"
 authors = [
